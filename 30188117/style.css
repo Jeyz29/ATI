@@ -109,3 +109,11 @@
             font-size: 1.5em
         }
 
+        .estudiantes {
+            transition: all 0.2s ease-in-out;   
+        }
+        .estudiantes:hover {
+            background-color: #99c5dd;  
+            transform: scale(1.05); 
+            transform: scale(1.05) rotate(5deg);
+        }
