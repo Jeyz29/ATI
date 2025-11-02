@@ -42,6 +42,9 @@
         .ucv {
             font-size: 0.6em;
         }
+        button{
+            color:#87b1ef
+        }
         header#indexh {
             background-color: #87b1ef; 
             color: white;
