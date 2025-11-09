@@ -64,6 +64,12 @@ p {
         width: auto;
     }
 
+    .perfil picture img {
+        content: url('30188117Pequena.jpg');
+        width: 100%;
+        border-top-left-radius: 50px;
+    }
+
     img {
         width: 100%;
         border-top-left-radius: 50px;
@@ -91,10 +97,18 @@ p {
     .perfil {
         width: auto;
     }
+
+    .perfil picture img {
+        content: url('30188117Pequena.jpg');
+        width: 100%;
+        border-top-left-radius: 50px;
+    }
+
     img {
         width: 100%;
         border-top-left-radius: 50px;
     }
+
     .texto {
         width: auto;
         padding: 15px 20px;
@@ -107,10 +121,18 @@ p {
     .perfil {
         width: auto;
     }
+
+    .perfil picture img {
+        content: url('30188117Grande.jpg');
+        width: 100%;
+        border-top-left-radius: 50px;
+    }
+
     img {
         width: 100%;
         border-top-left-radius: 50px;
     }
+
     .texto {
         width: auto;
         padding: 15px 20px;
@@ -128,10 +150,18 @@ p {
     .perfil {
         width: auto;
     }
+
+    .perfil picture img {
+        content: url('30188117Grande.jpg');
+        width: 100%;
+        border-top-left-radius: 50px;
+    }
+
     img {
         width: 100%;
         border-top-left-radius: 50px;
     }
+
     .texto {
         width: auto;
         padding: 15px 20px;
@@ -155,7 +185,7 @@ button {
     color: #87b1ef
 }
 
-header#indexh {
+#indexh {
     background-color: #87b1ef;
     color: white;
     padding: 10px 0;
@@ -199,18 +229,18 @@ nav li {
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     justify-content: center;
     align-items: start;
 }
 
 .personas li {
-    width: 100%; 
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
     text-align: center;
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .estudiantes {
@@ -249,4 +279,170 @@ nav li {
 .estudiantes:hover {
     background-color: #99c5dd;
     transform: scale(1.05) rotate(5deg);
+}
+
+
+/* Media queries*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .personas {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .cabecera {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .estudiantes img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .personas li:first-child .estudiantes img {
+        content: url('30188117Pequena.jpg');
+    }
+
+    .estudiantes p {
+        font-size: 1.2em;
+    }
+
+    header#indexh {
+        padding: 15px 0;
+    }
+
+    footer {
+        padding: 15px 0;
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .personas {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .cabecera {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .estudiantes img {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .personas li:first-child .estudiantes img {
+        content: url('30188117Pequena.jpg');
+    }
+
+    .estudiantes p {
+        font-size: 1.3em;
+    }
+
+    header#indexh {
+        padding: 12px 0;
+    }
+
+    footer {
+        padding: 12px 0;
+        font-size: 1.1em;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .personas {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .cabecera {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .estudiantes img {
+        width: 190px;
+        height: 190px;
+    }
+
+
+    .personas li:first-child .estudiantes img {
+        content: url('30188117Grande.jpg');
+    }
+
+    .estudiantes p {
+        font-size: 1.4em;
+    }
+
+    header#indexh {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 1.15em;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .personas {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .cabecera {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .estudiantes img {
+        width: 200px;
+        height: 200px;
+    }
+
+
+    .personas li:first-child .estudiantes img {
+        content: url('30188117Grande.jpg');
+    }
+
+    .estudiantes p {
+        font-size: 1.5em;
+    }
+
+    header#indexh {
+        padding: 10px 0;
+    }
+
+    footer {
+        padding: 10px 0;
+        font-size: 1.2em;
+    }
 }
