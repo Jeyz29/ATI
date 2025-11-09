@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -7,17 +8,26 @@
     <title>Gustavo Berne </title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="perfilb">
-    <img src = "30188117.jpg">
 
-    <div class = "texto">
-        <h1>
-        Gustavo Berne 
-        </h1>
-        <p1>
-            Soy estudiante del 6to semestre de Computación de la UCV. Me gustan los videojuegos y los deportes ádemas de ver películas
-            de distintos géneros.
-        </p1>
+<body id="container">
+    <div class="perfil">
+        <picture>
+            <source media="(min-width: 320px)" srcset="30188117Pequena.jpg" />
+            <source media="(min-width: 769px)" srcset="30188117Grande.jpg" />
+            <img src="30188117Grande.jpg" alt="Foto de perfil de Gustavo Berne">
+        </picture>
+
+
+        <div class="texto">
+            <h1>
+                Gustavo Berne
+            </h1>
+            <p1>
+                Soy estudiante del 6to semestre de Computación de la UCV. Me gustan los videojuegos y los deportes
+                ádemas de
+                ver películas
+                de distintos géneros.
+            </p1>
             <table>
                 <tbody>
                     <tr>
@@ -42,10 +52,13 @@
                     </tr>
                 </tbody>
             </table>
-      
-        <p2>
-            Si necesitan comunicarse conmigo me pueden escribir a: <a href="mailto:gbernev@gmail.com" id="correo">gbernev@gmail.com</a>
-        </p2>
+
+            <p2>
+                Si necesitan comunicarse conmigo me pueden escribir a: <a href="mailto:gbernev@gmail.com"
+                    id="correo">gbernev@gmail.com</a>
+            </p2>
+        </div>
     </div>
 </body>
+
 </html>
