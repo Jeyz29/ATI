@@ -17,7 +17,7 @@ h1 {
     font-size: 1rem;
 }
 
-img {
+#foto_perfil {
     width: 20%;
     height: auto;
     border-top-left-radius: 50px;
@@ -58,7 +58,7 @@ p {
 }
 
 #lenguajes {
-    font-weight: bold;
+    
 }
 
 /* Media queries*/
@@ -74,7 +74,7 @@ p {
         border-top-left-radius: 50px;
     }
 
-    img {
+    #foto_perfil {
         width: 100%;
         border-top-left-radius: 50px;
     }
@@ -108,7 +108,7 @@ p {
         border-top-left-radius: 50px;
     }
 
-    img {
+    #foto_perfil {
         width: 100%;
         border-top-left-radius: 50px;
     }
@@ -132,7 +132,7 @@ p {
         border-top-left-radius: 50px;
     }
 
-    img {
+    #foto_perfil {
         width: 100%;
         border-top-left-radius: 50px;
     }
@@ -161,7 +161,7 @@ p {
         border-top-left-radius: 50px;
     }
 
-    img {
+    #foto_perfil{
         width: 100%;
         border-top-left-radius: 50px;
     }
