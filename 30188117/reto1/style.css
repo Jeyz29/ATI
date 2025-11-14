@@ -57,6 +57,10 @@ p {
     color: red;
 }
 
+#lenguajes {
+    font-weight: bold;
+}
+
 /* Media queries*/
 @media (min-width: 320px) and (max-width: 480px) {
     .perfil {
