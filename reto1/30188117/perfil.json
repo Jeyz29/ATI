@@ -1,0 +1,13 @@
+const perfil = {	
+	"nombre":"Gustavo Berne",
+	"descripcion":"Soy estudiante del 6to semestre de Computación de la UCV. Me gustan los videojuegos y los deportes ádemas de ver películas de distintos géneros.",
+	"color": "Rojo",
+	"libro": ["El hacedor de ilusiones"],
+	"musica": ["Rap"],
+	"video_juego": ["The last of us y Red dead redemption 2"],
+	"lenguajes": ["C++, java, python"],
+	"email":"angelxob@hotmail.com",
+	"ci": "30188117",
+	"genero":"masculino",
+	"fecha_nacimiento":"29/11/2002"
+}
