@@ -8,114 +8,41 @@
     <title>ATI[UCV] 2025-2</title>
     <link rel="stylesheet" href="style.css">
 
+    <script type="text/javascript" src="datos/index.json" defer></script>
+    <script type="text/javascript" src="js/index.js" defer></script>
+
+    <template id="personas">
+        <li>
+            <a href="">
+                <img class="galleryimg" src="">
+                <label></label>
+            </a>
+        </li>
+    </template>
 </head>
 
-<body id="indexb">
-    <header id="indexh">
-        <div class="cabecera">
-            <nav>
-                <ul>
-                    <li>
-                        <span>ATI<span class="ucv">[UCV]</span> 2025-2</span>
-                    </li>
-                </ul>
-            </nav>
-            <li class="saludo">
-                Hola, Gustavo
-            </li>
-            <form class="busqueda">
-                <input type="text" placeholder="Nombre...">
-                <button type="submit">Buscar</button>
-            </form>
-        </div>
-    </header>
-    <section>
-        <div class="dummies">
-            <ul class="personas">
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="logo">ATI<span>[UCV]</span>2025-2</li>
+                <li id="saludo">Hola,</li>
                 <li>
-                    <div class="estudiantes">
-        <picture>
-            <source media="(min-width: 320px)" srcset="30188117Pequena.jpg" />
-            <source media="(min-width: 769px)" srcset="30188117Grande.jpg" />
-            <img src="30188117Grande.jpg" alt="Foto de perfil de Gustavo Berne">
-        </picture>
-                        <p>Gustavo Berne</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy1/dummy.jpg">
-                        <p>Aitana Bommati</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy2/dummy.jpg">
-                        <p>Alexia Putellas</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy3/dummy.jpg">
-                        <p>Guro Reiten</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy4/dummy.jpg">
-                        <p>Gerd Muller</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy5/dummy.jpg">
-                        <p>Carlos Alberto</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy6/dummy.jpg">
-                        <p>Mane Garrincha</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy2/dummy.jpg">
-                        <p>Patricia Guijarro</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy1/dummy.jpg">
-                        <p>Salma Paralluelo</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy5/dummy.jpg">
-                        <p>Jorge Campos</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy3/dummy.jpg">
-                        <p>Lucy Bronze</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="estudiantes">
-                        <img src="dummy4/dummy.jpg">
-                        <p>Peter Crouch</p>
-                    </div>
+                    <form action="" method="get">
+                        <input type="text" id="busqueda" placeholder="Nombre...">
+                        <button type="submit"></button>
+                    </form>
                 </li>
             </ul>
+        </nav>
+    </header>
+    <section>
+        <ul class="personas">
+        </ul>
         </div>
     </section>
     <footer>
-        <div class="copyright">
-            <p>Copyright © 2025 Escuela de computación - ATI. Todos los derechos reservados</p>
-        </div>
+        Copyright 2025 Escuela de Computación - ATI. Todos los derechos reservados
     </footer>
 </body>
-
 </html>
