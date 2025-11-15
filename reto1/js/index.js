@@ -19,7 +19,9 @@ window.onload = function () {
 
     configLan.onload = function () {
         aplicarConfiguracion();
-        cargarPersonas();
+        if (typeof perfiles !== 'undefined') {
+            cargarPerfiles(perfiles);
+        }
     };
 }
 
@@ -56,3 +58,14 @@ function aplicarConfiguracion() {
     }
 }
 
+function cargarPerfiles(perfiles) {
+    const gallery = document.querySelector('.gallery');
+
+    perfiles.forEach(perfil => {
+        const galleryItem = document.querySelector('#galleryItem').content.cloneNode(true);
+        galleryItem.querySelector('a').setAttribute('href', `perfil.html?ci=${perfil.ci}`)
+        galleryItem.querySelector('.galleryimg').setAttribute('src', `${perfil.imagen}`);
+        galleryItem.querySelector('label').innerHTML = `${perfil.nombre}`;
+        gallery.appendChild(galleryItem);
+    });
+}
