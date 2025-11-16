@@ -212,12 +212,12 @@ nav ul {
     align-items: center;
 }
 nav li {
-    font-size: 1.2em;
+    font-size: 1.4em;
     list-style: none;
 }
 
 #saludo {
-    font-size: 1.2em;
+    font-size: 1.4em;
     list-style: none;
 }
 
@@ -279,7 +279,15 @@ nav li {
     transform: scale(1.05) rotate(5deg);
 }
 
-
+.no-resultados {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #87b1ef;
+    grid-column: 1 / -1;
+    width: 100%;
+    margin: 20px 0;
+}
 
 
 /* Media queries*/
