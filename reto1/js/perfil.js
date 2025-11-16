@@ -1,6 +1,6 @@
 window.onload = function () {
-    const urlParams = new URLSearchParams(window.location.search);
-    const ci = urlParams.get('ci');
+    const parametros = new URLSearchParams(window.location.search);
+    const ci = parametros.get('ci');
 
     const scriptPerfil = document.createElement('script');
     scriptPerfil.src = `${ci}/perfil.json`;
@@ -9,7 +9,7 @@ window.onload = function () {
     scriptPerfil.onload = function () {
         mostrarPerfil(perfil, ci);
 
-    };
+    };   
 }
 
 function mostrarPerfil(perfil, ci) {
