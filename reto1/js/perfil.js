@@ -59,7 +59,7 @@ function mostrarPerfil(perfil, ci) {
     const correoLink = document.querySelector('#correo');
     if (correoLink && perfil.email) {
         correoLink.href = `mailto:${perfil.email}`;
-        correoLink.textContent = perfil.email;
+        correoLink.textContent = config.email.replace('[email]', perfil.email);
     }
 
 
