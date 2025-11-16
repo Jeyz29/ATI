@@ -38,7 +38,7 @@ function aplicarConfiguracion() {
 
     const saludo = document.getElementById('saludo');
     if (saludo && config.saludo) {
-        saludo.textContent = config.saludo + ',';
+        saludo.textContent = config.saludo + ', Gustavo Berne';
     }
 
     const busqueda = document.getElementById('busqueda');
