@@ -1,16 +1,16 @@
 window.onload = function () {
-    const parametros = new URLSearchParams(window.location.search);
+    const parametros = new URLSearchParams(window.location.search);///this
     const ci = parametros.get('ci');
     const languaje = parametros.get('lang');
 
     if (!languaje) {
-        let url = window.location.href;
+        let url = window.location.href; //this
         if (url.indexOf('?') > -1) {
             url += '&lang=ES';
         } else {
             url += '?lang=ES';
         }
-        window.history.replaceState(null, '', url);
+        window.history.replaceState(null, '', url); //this
 
     }
 

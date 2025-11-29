@@ -1,6 +1,11 @@
+let idiomaActual = 'ES';
 window.onload = function () {
-    const languaje = new URLSearchParams(window.location.search).get("lang");
-    if (!languaje) {
+    const params = new URLSearchParams(window.location.search);
+    const langParam = params.get("lang");
+
+    const languaje = langParam ? langParam.toUpperCase() : 'ES';
+    idiomaActual = languaje;
+    if (!langParam) {
         let url = window.location.href;
         if (url.indexOf('?') > -1) {
             url += '&lang=ES'
@@ -63,7 +68,7 @@ function cargarPerfiles(perfiles) {
 
     perfiles.forEach(perfil => {
         const galleryItem = document.querySelector('#galleryItem').content.cloneNode(true);
-        galleryItem.querySelector('a').setAttribute('href', `perfil.html?ci=${perfil.ci}`)
+        galleryItem.querySelector('a').setAttribute('href', `perfil.html?ci=${perfil.ci}&lang=${idiomaActual}`);
         galleryItem.querySelector('.galleryimg').setAttribute('src', `${perfil.imagen}`);
         galleryItem.querySelector('label').innerHTML = `${perfil.nombre}`;
         gallery.appendChild(galleryItem);
