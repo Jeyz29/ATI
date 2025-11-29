@@ -1,20 +1,19 @@
 let idiomaActual = 'ES';
 window.onload = function () {
-    const params = new URLSearchParams(window.location.search);
+    const params = new URLSearchParams(this.location.search);
     const langParam = params.get("lang");
 
     const languaje = langParam ? langParam.toUpperCase() : 'ES';
     idiomaActual = languaje;
     if (!langParam) {
-        let url = window.location.href;
+        let url = this.location.href;
         if (url.indexOf('?') > -1) {
             url += '&lang=ES'
         }
         else {
             url += '?lang=ES'
         }
-        window.history.replaceState(null, '', url);
-
+        this.history.replaceState(null, '', url);
     }
 
     const configLan = document.createElement('script');
@@ -122,6 +121,7 @@ function inicializarBusqueda() {
     if (formulario && inputBusqueda) {
         formulario.addEventListener('submit', function (e) {
             e.preventDefault();
+            console.log("Elemento que activo el submit :", this);
             const query = inputBusqueda.value.trim();
             filtrarEstudiantes(query);
         });

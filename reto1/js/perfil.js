@@ -1,16 +1,21 @@
 window.onload = function () {
-    const parametros = new URLSearchParams(window.location.search);///this
+    const parametros = new URLSearchParams(window.location.search);
     const ci = parametros.get('ci');
     const languaje = parametros.get('lang');
 
+    if(!ci){
+        this.document.body.innerHTML = "<h2>No se pudo encontrar datos del perfil</h2>";
+        console.log("No existe la cedula en la url:", this.location )
+    }
+
     if (!languaje) {
-        let url = window.location.href; //this
+        let url = window.location.href; 
         if (url.indexOf('?') > -1) {
             url += '&lang=ES';
         } else {
             url += '?lang=ES';
         }
-        window.history.replaceState(null, '', url); //this
+        window.history.replaceState(null, '', url); 
 
     }
 
